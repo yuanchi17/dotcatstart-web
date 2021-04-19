@@ -16,12 +16,12 @@
     <div class="hidden md:flex">
       <Menu v-for="item in navigations" :key="item.name" :item="item"/>
       <div class="hidden lg:flex space-x-2">
-        <a href="/" target="_blank" class=" my-auto py-1 px-4 border bg-yellow-900 rounded-full text-sm text-white text-center transition duration-300 hover:bg-yellow-700"> 登入／註冊</a>
-        <a href="/" target="_blank" class=" my-auto py-1 px-4 border bg-yellow-900 rounded-full text-sm text-white text-center transition duration-300 hover:bg-yellow-700"> 購物車</a>
+        <a href="/" target="_blank" class=" my-auto py-1 px-4 text-sm text-center yellow-rounded-full"> 登入／註冊</a>
+        <a href="/" target="_blank" class=" my-auto py-1 px-4 text-sm text-center yellow-rounded-full"> 購物車</a>
       </div>
       <div class="lg:hidden flex space-x-2">
-        <a href="/" target="_blank" class="h-10 w-10 my-auto border bg-yellow-900 text-white p-2 rounded-full hover:bg-yellow-700"><UserIcon/></a>
-        <a href="/" target="_blank" class="h-10 w-10 my-auto border bg-yellow-900 text-white p-2 rounded-full hover:bg-yellow-700"><ShoppingCartIcon/></a>
+        <a href="/" target="_blank" class="h-10 w-10 my-auto p-2 yellow-rounded-full"><UserIcon/></a>
+        <a href="/" target="_blank" class="h-10 w-10 my-auto p-2 yellow-rounded-full"><ShoppingCartIcon/></a>
       </div>
     </div>
   </Disclosure>
@@ -147,7 +147,9 @@ export default {
 </script>
 
 <style scoped>
+@import './../assets/tailwind.css';
 .img-logo {
   max-height: 46px
 }
+
 </style>

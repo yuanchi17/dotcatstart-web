@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.yellow-rounded-full {
+  @apply border bg-yellow-900 text-white rounded-full transition duration-300 hover:bg-yellow-700;
+}
