@@ -7,8 +7,8 @@
       </a>
     </div>
     <div class="flex flex-col">
-      <img src="https://dogcatstar.atomcdn.com/2020/07/03/955206/title_popular-1.png" class="h-16 mx-auto">
-      <div class="grid grid-cols sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 mx-16 my-8">
+      <img src="https://dogcatstar.atomcdn.com/2020/07/03/955206/title_popular-1.png" class="h-auto sm:h-16 mx-auto">
+      <div class="grid grid-cols sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 mx-4 my-8 sm:mx-16">
         <Card :item="item" v-for="item in hotItems" :key="item.title"/>
       </div>
     </div>
