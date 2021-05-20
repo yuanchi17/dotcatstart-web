@@ -4,7 +4,7 @@
       <MenuIcon class="h-6 w-6 text-yellow-900" aria-hidden="true" />
     </DisclosureButton>
     <a href="/" target="_blank" class="img-logo my-auto mx-auto md:mx-0"><img src="https://dogcatstar.atomcdn.com/2020/07/03/menu_logo.png"></a>
-    <DisclosurePanel class="flex flex-col md:hidden absolute top-20 inset-x-0 z-10 py-2 bg-white border-2 border-yellow-900 rounded">
+    <DisclosurePanel class="flex flex-col md:hidden absolute top-20 inset-x-0 z-10 m-2 py-2 bg-white border-2 border-yellow-900 rounded">
       <a href="/" target="_blank" v-for="item in navigations" :key="item.name" class=" w-24 my-auto mx-auto px-4 py-2 text-yellow-900  border-b-2 border-yellow-900 border-opacity-0 transition duration-300 hover:border-opacity-50 focus:outline-none">
         {{ item.name }}
         <p class="text-xs text-yellow-500"> {{ item.en }}</p>
@@ -13,6 +13,8 @@
 
     <div class="hidden md:flex">
       <Menu v-for="item in navigations" :key="item.name" :item="item"/>
+    </div>
+    <div class="hidden md:flex">
       <div class="hidden lg:flex space-x-2">
         <a href="/" target="_blank" class=" my-auto py-1 px-4 text-sm text-center yellow-rounded-full"> 登入／註冊</a>
         <a href="/" target="_blank" class=" my-auto py-1 px-4 text-sm text-center yellow-rounded-full"> 購物車</a>

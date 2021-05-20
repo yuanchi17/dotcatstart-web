@@ -11,3 +11,7 @@
 .yellow-rounded {
   @apply border bg-yellow-900 text-white rounded transition duration-300 hover:bg-yellow-700;
 }
+
+.card-title {
+  @apply text-base font-semibold;
+}

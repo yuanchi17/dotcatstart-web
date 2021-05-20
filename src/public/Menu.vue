@@ -1,6 +1,6 @@
 <template>
   <Popover>
-    <PopoverButton class=" my-auto px-4 py-2 text-yellow-900 text-center border-b-2 border-yellow-900 border-opacity-0 transition duration-300 hover:border-opacity-50 focus:outline-none">
+    <PopoverButton class="px-4 py-2 text-yellow-900 text-center border-b-2 border-yellow-900 border-opacity-0 transition duration-300 hover:border-opacity-50 focus:outline-none">
       {{ item.name }}
       <p class="text-xs text-yellow-500"> {{ item.en }}</p>
     </PopoverButton>
